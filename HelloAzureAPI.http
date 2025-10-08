@@ -1,0 +1,6 @@
+@HelloAzureAPI_HostAddress = http://localhost:5173
+
+GET {{HelloAzureAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
