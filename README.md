@@ -8,9 +8,15 @@ A .NET 9 Web API deployed to **Microsoft Azure App Service** using the **Azure C
 
 ---
 
+
 ## 🧠 Overview  
 This project demonstrates how to build, publish, and deploy a modern .NET API to Azure App Service using CI/CD automation.  
 It includes proper environment configuration, Git best practices, and secure deployment to the cloud.
+
+---
+
+## 🔒 Security Note
+Swagger UI is intentionally enabled in production for this portfolio project to allow easy API testing and demonstration. In a real-world application with sensitive data, Swagger would typically be restricted to development environments only.
 
 ---
 
@@ -29,3 +35,9 @@ It includes proper environment configuration, Git best practices, and secure dep
 ```bash
 dotnet restore
 dotnet run
+
+---
+
+Happy Coding!
+
+---
