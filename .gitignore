@@ -216,6 +216,9 @@ PublishScripts/
 csx/
 *.build.csdef
 
+# Microsoft Azure Github CI / CD
+*.PublishSettings
+
 # Microsoft Azure Emulator
 ecf/
 rcf/
