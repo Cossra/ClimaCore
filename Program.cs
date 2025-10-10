@@ -16,8 +16,19 @@ app.UseHttpsRedirection();
 
 var summaries = new[]
 {
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching",
+    "Foggy", "Drizzling", "Sunny", "Cloudy", "Windy", "Humid"
 };
+
+// Health check endpoint for monitoring and CI/CD verification
+app.MapGet("/health", () => new { 
+    Status = "Healthy", 
+    Timestamp = DateTime.UtcNow,
+    Version = "1.0.1",
+    Environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? "Production",
+    Message = "HelloAzureAPI is running successfully! 🚀"
+})
+.WithName("HealthCheck");
 
 app.MapGet("/weatherforecast", () =>
 {
