@@ -1,7 +1,6 @@
 # HelloAzureAPI 🚀  
+[![Deployed to Azure](https://img.shields.io/badge/Deployed%20to-Azure-blue?logo=microsoftazure&logoColor=white)](https://azure.microsoft.com)
 [![Build Status](https://github.com/Cossra/HelloAzureAPI/actions/workflows/azure-deploy.yml/badge.svg)](https://github.com/Cossra/HelloAzureAPI/actions/workflows/azure-deploy.yml)
-![Infrastructure as Code](https://img.shields.io/badge/Infra-as--Code-success?logo=azuredevops&logoColor=white)
-![Azure](https://img.shields.io/badge/Hosted%20on-Azure%20App%20Service-blue?logo=microsoftazure&logoColor=white)
 
 A **cloud-native REST API** built with **.NET 9** and deployed via automated CI/CD pipelines using **GitHub Actions** and the **Azure CLI**.  
 Implements **infrastructure as code**, versioned deployments, and production-ready observability for a realistic enterprise backend.
