@@ -23,13 +23,13 @@ jobs:
           dotnet-version: 9.0.x
 
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore src/ClimaCore.csproj
 
       - name: Build
-        run: dotnet build --configuration Release --no-restore
+        run: dotnet build src/ClimaCore.csproj --configuration Release --no-restore
 
       - name: Publish
-        run: dotnet publish -c Release -o ./publish
+        run: dotnet publish src/ClimaCore.csproj -c Release -o ./publish --no-build
 
       - name: Log in to Azure
         uses: azure/login@v2
