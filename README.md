@@ -9,7 +9,7 @@ A **cloud-native REST API** built with **.NET 9** and deployed via automated CI/
 
 ---
 
-## 🧠 Overview  
+## 🧰 Overview  
 Built with .NET 9 and deployed to Azure App Service, this project delivers a production-grade REST API with OpenAPI/Swagger documentation, health monitoring, semantic versioning, and environment-specific configuration. CI/CD automation is handled through GitHub Actions and Azure CLI. The headless front end connects directly to Azure endpoints using React 18, TypeScript, and Tailwind CSS, forming a fast, modular, and modern full-stack web application.
 
 ---
@@ -26,7 +26,7 @@ Swagger UI is intentionally enabled in production for this portfolio project to 
 
 ---
 
-## 🧑‍💻 Local Development  
+## 👨‍💻 Local Development  
 
 ```bash
 dotnet restore
