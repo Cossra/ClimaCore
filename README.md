@@ -19,20 +19,10 @@ Swagger UI is intentionally enabled in production for this portfolio project to 
 
 ---
 
-## 🧩 Agile User Story
-As a user
-I Want to check free, real-time weather updates online
-SO That I can quickly see current conditions wherever I am
-
----
-
-## ⚙️ Tech Stack  
-- .NET 9 (STS)  
-- C#  
-- Azure App Service  
-- Azure CLI  
-- GitHub Actions  
-- Linux Hosting (App Service Plan)
+## 🧩 Agile User Story 
+**As a user**  
+**I want** to check free, real-time weather updates online.  
+**So that** I can quickly see current conditions wherever I am.
 
 ---
 
@@ -44,6 +34,19 @@ dotnet run
 
 ---
 
-Happy Coding!
+## ⚙️ Tech Stack
+- .NET 9
+- C#
+- Azure App Service
+- Azure CLI
+- GitHub Actions
+- Linux Hosting
+- React 18 (Headless Front End)
+- TypeScript
+- Tailwind CSS
+
+---
+
+<p align="center">💻 Happy Coding!</p>
 
 ---
