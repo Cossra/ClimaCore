@@ -26,11 +26,12 @@ Swagger UI is intentionally enabled in production for this portfolio project to 
 
 ---
 
-## 🧩 Local Development  
+## 🧑‍💻 Local Development  
 
 ```bash
 dotnet restore
 dotnet run
+```
 
 ---
 
@@ -49,4 +50,4 @@ dotnet run
 
 <p align="center">💻 Happy Coding!</p>
 
----
+
