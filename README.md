@@ -1,11 +1,11 @@
-# HelloAzureAPI 🚀  
+# ClimaCore 🚀  
 
 [![Deployed to Azure](https://img.shields.io/badge/Deployed%20to-Azure-blue?logo=microsoftazure&logoColor=white)](https://azure.microsoft.com)
 ![OpenAPI](https://img.shields.io/badge/Documented%20with-OpenAPI-green?logo=openapiinitiative&logoColor=white)
 
 A **cloud-native REST API** built with **.NET 9** and deployed via automated CI/CD pipelines using **GitHub Actions** and the **Azure CLI**, featuring versioned deployments and production-ready observability.
 
-🌐 **Live Demo:** [https://helloazure-robert.azurewebsites.net](https://helloazure-robert.azurewebsites.net)
+🌐 **Live Demo:** [https://climacore-robert.azurewebsites.net](https://climacore-robert.azurewebsites.net)
 
 ---
 

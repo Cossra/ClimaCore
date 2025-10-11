@@ -3,11 +3,11 @@
 # Setup staging slot for zero-downtime deployments
 # Run this script once to create the staging slot
 
-echo "🚀 Setting up staging slot for HelloAzureAPI..."
+echo "🚀 Setting up staging slot for ClimaCore..."
 
 # Variables
-RESOURCE_GROUP="rg-helloazure"
-APP_NAME="helloazure-robert"
+RESOURCE_GROUP="rg-climacore"
+APP_NAME="climacore-robert"
 SLOT_NAME="staging"
 
 # Create staging slot

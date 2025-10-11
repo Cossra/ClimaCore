@@ -1,4 +1,4 @@
-name: Deploy HelloAzureAPI to Azure
+name: Deploy ClimaCore to Azure
 
 on:
   push:
@@ -57,7 +57,7 @@ jobs:
       - name: Deploy to Azure Web App (Production)
         uses: azure/webapps-deploy@v3
         with:
-          app-name: helloazure-robert
+          app-name: climacore-robert
           slot-name: production
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: ./publish
@@ -69,7 +69,7 @@ jobs:
 
       - name: Health check on production
         run: |
-          PROD_URL="https://helloazure-robert.azurewebsites.net"
+          PROD_URL="https://climacore-robert.azurewebsites.net"
           echo "🔍 Performing health check on production: $PROD_URL"
           
           # Try to reach the health endpoint
@@ -90,7 +90,7 @@ jobs:
 
       - name: Post-deployment verification
         run: |
-          PROD_URL="https://helloazure-robert.azurewebsites.net"
+          PROD_URL="https://climacore-robert.azurewebsites.net"
           echo "🔍 Final verification of deployment..."
           
           # Test the health endpoint response
@@ -133,7 +133,7 @@ jobs:
             🚀 **Automated Release ${{ steps.version.outputs.version }}**
             
             **Deployment Details:**
-            - Deployed to: helloazure-robert.azurewebsites.net
+            - Deployed to: climacore-robert.azurewebsites.net
             - Build Date: ${{ github.event.head_commit.timestamp }}
             - Commit: ${{ github.sha }}
             - Author: ${{ github.event.head_commit.author.name }}

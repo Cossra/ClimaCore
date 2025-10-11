@@ -1,4 +1,4 @@
-# HelloAzureAPI - Advanced CI/CD Pipeline
+# ClimaCore - Advanced CI/CD Pipeline
 
 A .NET 9 minimal API with advanced Azure deployment features including automatic versioning and blue-green deployments using staging slots.
 
@@ -25,8 +25,8 @@ chmod +x scripts/setup-staging.sh
 Or manually using Azure CLI:
 ```bash
 az webapp deployment slot create \
-  --name helloazure-robert \
-  --resource-group rg-helloazure \
+  --name climacore-robert \
+  --resource-group rg-climacore \
   --slot staging
 ```
 
@@ -57,8 +57,8 @@ The GitHub Actions workflow (`azure-deploy.yml`) automatically:
 
 ## 🌐 URLs
 
-- **Production**: https://helloazure-robert.azurewebsites.net
-- **Staging**: https://helloazure-robert-staging.azurewebsites.net
+- **Production**: https://climacore-robert.azurewebsites.net
+- **Staging**: https://climacore-robert-staging.azurewebsites.net
 - **API Endpoint**: `/weatherforecast`
 
 ## 📋 Manual Operations
@@ -68,8 +68,8 @@ The GitHub Actions workflow (`azure-deploy.yml`) automatically:
 #### Option 1: Swap slots back
 ```bash
 az webapp deployment slot swap \
-  --name helloazure-robert \
-  --resource-group rg-helloazure \
+  --name climacore-robert \
+  --resource-group rg-climacore \
   --slot production \
   --target-slot staging
 ```
@@ -87,10 +87,10 @@ git checkout v1.0.5
 ### Manual Health Check
 ```bash
 # Test staging
-curl https://helloazure-robert-staging.azurewebsites.net/weatherforecast
+curl https://climacore-robert-staging.azurewebsites.net/weatherforecast
 
 # Test production
-curl https://helloazure-robert.azurewebsites.net/weatherforecast
+curl https://climacore-robert.azurewebsites.net/weatherforecast
 ```
 
 ### View Deployment Logs
@@ -129,8 +129,8 @@ git push origin v2.0.0
 ```bash
 # Recreate staging slot
 az webapp deployment slot create \
-  --name helloazure-robert \
-  --resource-group rg-helloazure \
+  --name climacore-robert \
+  --resource-group rg-climacore \
   --slot staging
 ```
 

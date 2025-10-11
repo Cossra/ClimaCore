@@ -1,4 +1,4 @@
-# HelloAzureAPI - Free Tier CI/CD Pipeline
+# ClimaCore - Free Tier CI/CD Pipeline
 
 A .NET 9 minimal API with CI/CD pipeline optimized for Azure Free Tier limitations.
 
@@ -30,8 +30,7 @@ Add this secret to your GitHub repository (Settings → Secrets and variables �
 - Click "Get publish profile"
 - Copy the entire XML content and paste as secret value
 
-### URLs
-- **Production**: https://helloazure-robert.azurewebsites.net
+- **Production**: https://climacore-robert.azurewebsites.net
 - **API Endpoint**: `/weatherforecast`
 
 ## 🔄 How the Pipeline Works
@@ -75,8 +74,8 @@ git push origin main --force
 # Build and deploy manually using Azure CLI
 dotnet publish -c Release -o ./publish
 az webapp deployment source config-zip \
-  --resource-group rg-helloazure \
-  --name helloazure-robert \
+  --resource-group rg-climacore \
+  --name climacore-robert \
   --src ./publish.zip
 ```
 

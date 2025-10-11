@@ -2,7 +2,7 @@
 
 ## [1.0.0] - 2025-10-08
 ### Added
-- Initial release of HelloAzureAPI
+- Initial release of ClimaCore
 - Set up .gitignore and .env file
 - Deployed first version to Azure App Service
 - Added README, LICENSE, and CHANGELOG for public release

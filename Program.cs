@@ -47,7 +47,7 @@ app.MapGet("/health", () => new {
     Timestamp = DateTime.UtcNow,
     Version = "1.0.1",
     Environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? "Production",
-    Message = "HelloAzureAPI is running successfully! 🚀"
+    Message = "ClimaCore is running successfully! 🚀"
 })
 .WithName("HealthCheck");
 
