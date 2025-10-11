@@ -72,7 +72,7 @@ git push origin main --force
 ### Option 3: Manual Re-deploy
 ```bash
 # Build and deploy manually using Azure CLI
-dotnet publish -c Release -o ./publish
+dotnet publish src/ClimaCore.csproj -c Release -o ./publish
 az webapp deployment source config-zip \
   --resource-group rg-climacore \
   --name climacore-robert \
