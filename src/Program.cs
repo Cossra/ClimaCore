@@ -1,18 +1,18 @@
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 builder.Services.AddSwaggerGen();
 
+// Configure CORS
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
     {
         policy
             .WithOrigins(
-                "https://your-frontend-url.azurestaticapps.net",  // replace this with your actual static site URL
-                "http://localhost:5173" // this lets you test locally in Vite/React dev mode
+                "http://localhost:5173", // Local Vite dev
+                "https://cimacore-frontend.z13.web.core.windows.net" // replace with your actual Azure static URL once deployed
             )
             .AllowAnyHeader()
             .AllowAnyMethod();
@@ -24,7 +24,6 @@ var app = builder.Build();
 // Enable CORS
 app.UseCors("AllowFrontend");
 
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
 {
@@ -35,15 +34,10 @@ if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
 
 app.UseHttpsRedirection();
 
-var summaries = new[]
+// Health check endpoint
+app.MapGet("/health", () => new
 {
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching",
-    "Foggy", "Drizzling", "Sunny", "Cloudy", "Windy", "Humid"
-};
-
-// Health check endpoint for monitoring and CI/CD verification
-app.MapGet("/health", () => new { 
-    Status = "Healthy", 
+    Status = "Healthy",
     Timestamp = DateTime.UtcNow,
     Version = "1.0.1",
     Environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? "Production",
@@ -51,11 +45,17 @@ app.MapGet("/health", () => new {
 })
 .WithName("HealthCheck");
 
+// Weather forecast endpoint
+var summaries = new[]
+{
+    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy",
+    "Hot", "Sweltering", "Scorching", "Foggy", "Drizzling", "Sunny", "Cloudy", "Windy", "Humid"
+};
+
 app.MapGet("/weatherforecast", () =>
 {
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
+    var forecast = Enumerable.Range(1, 5).Select(index =>
+        new WeatherForecast(
             DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
             Random.Shared.Next(-20, 55),
             summaries[Random.Shared.Next(summaries.Length)]
