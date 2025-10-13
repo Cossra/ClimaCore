@@ -2,20 +2,22 @@
 
 [![Deployed to Azure](https://img.shields.io/badge/Deployed%20to-Azure-blue?logo=microsoftazure&logoColor=white)](https://azure.microsoft.com)
 ![OpenAPI](https://img.shields.io/badge/Documented%20with-OpenAPI-green?logo=openapiinitiative&logoColor=white)
+[![Frontend Live](https://img.shields.io/website?url=https%3A%2F%2Fclimacore.cossrobert.com&label=Frontend)](https://climacore.cossrobert.com)
+[![Backend API](https://img.shields.io/badge/Backend%20API-Azure-blue?logo=microsoftazure&logoColor=white)](https://climacoreapi.azurewebsites.net/weatherforecast)
 
-A **cloud-native REST API** built with **.NET 9** and deployed via automated CI/CD pipelines using **GitHub Actions** and the **Azure CLI**, featuring versioned deployments and production-ready observability.
+A cloud-native **.NET 9 REST API** built with **C#** and deployed via automated CI/CD pipelines using **GitHub Actions** and the **Azure CLI**, featuring semantic versioning, health monitoring, **OpenAPI documentation (Swagger UI)**, and production-ready observability.
 
-🌐 **Live Demo:** [https://climacore-robert.azurewebsites.net](https://climacore-robert.azurewebsites.net)
+🌐 **Live Demo:** [https://climacore.cossrobert.com](https://climacore.cossrobert.com)  
+🧩 **Backend API:** [https://climacore-robert.azurewebsites.net](https://climacore-robert.azurewebsites.net)  
+📘 **Swagger UI:** [https://climacoreapi.azurewebsites.net/swagger](https://climacoreapi.azurewebsites.net/swagger)
 
 ---
 
 ## 🧰 Overview  
-Built with .NET 9 and deployed to Azure App Service, this project delivers a production-grade REST API with OpenAPI/Swagger documentation, health monitoring, semantic versioning, and environment-specific configuration. CI/CD automation is handled through GitHub Actions and Azure CLI. The headless front end connects directly to Azure endpoints using React 18, TypeScript, and Tailwind CSS, forming a fast, modular, and modern full-stack web application.
 
----
+The API powers the ClimaCore frontend, providing structured weather data consumed by a **React 18 + TypeScript + Vite** client hosted on Azure Static Web Apps.
 
-## 🔒 Security Note
-Swagger UI is intentionally enabled in production for this portfolio project to allow easy API testing and demonstration. In a real-world application with sensitive data, Swagger would typically be restricted to development environments only.
+Continuous integration and deployment are automated through **GitHub Actions** and **Azure CLI**, ensuring seamless updates and reliable production performance across both environments.
 
 ---
 
@@ -23,6 +25,11 @@ Swagger UI is intentionally enabled in production for this portfolio project to 
 **As a user**  
 **I want** to check free, real-time weather updates online.  
 **So that** I can quickly see current conditions wherever I am.
+
+---
+
+## 🔒 Security Note  
+Swagger UI is intentionally enabled in production for demonstration and portfolio purposes. 
 
 ---
 
