@@ -13,23 +13,22 @@ A cloud-native **.NET 9 REST API** built with **C#** and deployed via automated 
 
 ---
 
-## 🧰 Overview  
+## ☁️ Overview  
+This cloud-native API powers the ClimaCore frontend, delivering structured weather data consumed by a **React 18 + TypeScript + Vite** client hosted on Azure Static Web Apps.  
 
-The API powers the ClimaCore frontend, providing structured weather data consumed by a **React 18 + TypeScript + Vite** client hosted on Azure Static Web Apps.
-
-Continuous integration and deployment are automated through **GitHub Actions** and **Azure CLI**, ensuring seamless updates and reliable production performance across both environments.
+Built natively for **Azure App Service**, it leverages platform-level scaling, monitoring, and deployment capabilities. Continuous integration and delivery are automated through **GitHub Actions** and **Azure CLI**, ensuring seamless updates and reliable production performance across both environments.
 
 ---
 
-## 🧩 Agile User Story 
+## 📘 API Documentation  
+Implemented OpenAPI/Swagger-based contract-first design, enabling parallel frontend/backend development and continuous integration testing - UI is intentionally enabled in production for demonstration and portfolio purposes. 
+
+---
+
+## 🧩 Agile User Story  
 **As a user**  
 **I want** to check free, real-time weather updates online.  
 **So that** I can quickly see current conditions wherever I am.
-
----
-
-## 🔒 Security Note  
-Swagger UI is intentionally enabled in production for demonstration and portfolio purposes. 
 
 ---
 
