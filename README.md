@@ -1,4 +1,4 @@
-# ClimaCore 🚀  
+# ClimaCore 🌦️  
 
 [![Deployed to Azure](https://img.shields.io/badge/Deployed%20to-Azure-blue?logo=microsoftazure&logoColor=white)](https://azure.microsoft.com)
 ![OpenAPI](https://img.shields.io/badge/Documented%20with-OpenAPI-green?logo=openapiinitiative&logoColor=white)
@@ -42,15 +42,17 @@ dotnet run
 ---
 
 ## ⚙️ Tech Stack
-- .NET 9
+- .NET 9 (REST API)
 - C#
-- Azure App Service
-- Azure CLI
-- GitHub Actions
+- Azure App Service (Cloud-native hosting and scaling)
+- Azure CLI (Deployment and environment automation)
+- GitHub Actions (CI/CD pipelines)
 - Linux Hosting
-- React 18 (Headless Front End)
+- React 18 (Headless Frontend)
 - TypeScript
-- Tailwind CSS
+- Vite (Build tooling and dev server)
+- Tailwind CSS (UI styling)
+- OpenAPI / Swagger (API documentation & contract-first design)
 
 ---
 
