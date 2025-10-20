@@ -8,7 +8,7 @@
 A cloud-native **.NET 9 REST API** built with **C#** and deployed via automated CI/CD pipelines using **GitHub Actions** and the **Azure CLI**, featuring semantic versioning, health monitoring, **OpenAPI documentation (Swagger UI)**, and production-ready observability.
 
 🌐 **Live Demo:** [https://climacore.cossrobert.com](https://climacore.cossrobert.com)  
-📘 **OpenAPI UI Docs:** [https://climacoreapi.azurewebsites.net/swagger](https://climacoreapi.azurewebsites.net/swagger) 
+📘 **OpenAPI UI Docs:** [https://climacoreapi.azurewebsites.net/swagger](https://climacoreapi.azurewebsites.net/swagger)  
 🧩 **Backend API:** [https://climacore-robert.azurewebsites.net](https://climacore-robert.azurewebsites.net)  
 
 ---
