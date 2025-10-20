@@ -13,6 +13,16 @@ A cloud-native **.NET 9 REST API** built with **C#** and deployed via automated 
 
 ---
 
+## 🌍 Preview
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7236fda7-51b6-43fb-bc19-baf1f9409888"
+       alt="ClimaCore Homepage"
+       width="80%"
+       style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
+</p>
+
+---
+
 ## ☁️ Overview  
 This cloud-native API powers the ClimaCore frontend, delivering structured weather data consumed by a **React 18 built with TypeScript & Vite** client hosted on Azure Static Web Apps.  
 
